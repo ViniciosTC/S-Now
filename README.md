@@ -140,12 +140,6 @@ npx expo run:android
 
 ---
 
-## Licença
-
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
-
----
-
 <div align="center">
   Desenvolvido por <a href="https://github.com/ViniciosTC"><strong>ViniciosTC</strong></a>
 </div>
