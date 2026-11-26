@@ -39,3 +39,12 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# APKs e builds
+apks/
+*.apk
+
+# Environment variables
+.env
+.env.*
+!.env.example

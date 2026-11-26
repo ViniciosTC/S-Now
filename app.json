@@ -1,25 +1,49 @@
 {
   "expo": {
-    "name": "Testes",
-    "slug": "Testes",
+    "name": "S-Now",
+    "slug": "s-now",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/Logo.jpg",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#070B14"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.sinalwifi.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#070B14",
+        "foregroundImage": "./assets/Logo.jpg"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "munim-wifi",
+        {
+          "locationPermission": "Permitir que o S-Now analise as redes Wi-Fi e qualidade do sinal.",
+          "android": {
+            "locationOnAndroid13Plus": true,
+            "neverForLocation": false
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permitir que o S-Now colete coordenadas de alta precisão e monitore a rede durante outras atividades.",
+          "isAndroidForegroundServiceEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ]
   }
 }
